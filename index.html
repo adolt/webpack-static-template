@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html lang="zh-CN">
+<!--<![endif]-->
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>YoMail邮箱客户端 Pathway to re:link</title>
+  <meta name="keywords" content="邮箱客户端,Gmail邮箱,Hotmail邮箱,Yahoo邮箱,QQ邮箱,协同办公" />
+  <meta name="description" content="无论你在哪里，YoMail让你的沟通像聊天一样自如，让你的协作像面对面一样轻松。">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" href="favicon.ico" />
+</head>
+
+<body>
+  <!--[if lt IE 7]>
+    <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+  <![endif]-->
+  <header class="container">
+    <div class="row justify-content-between">
+      <div class="col-auto logo align-items-center">
+        <img src="http://cloudresource-1251063063.costj.myqcloud.com/image/yomail_logo@1x.png" alt="YoMail邮件客户端">
+        <span>YoMail</span>
+      </div>
+      <div class="col-auto align-items-center">
+        <nav class="navbar">
+          <ul>
+            <li class="active">
+              <a href="http://www.yomail.com/">首页</a>
+            </li>
+            <li>
+              <a href="http://www.yomail.com/download/">下载</a>
+            </li>
+            <li>
+              <a href="http://www.yomail.com/membership/">会员</a>
+            </li>
+            <li>
+              <a target="_blank" href="http://www.yomail.com/community/" blank="_target">社区</a>
+            </li>
+            <li>
+              <a target="_blank" href="http://www.yomail.com/blog/" blank="_target">博客</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="container-fluid intro">
+      <div class="row justify-content-center">
+        <h1 class="col-12 font-normal content-center" id="title-text">Pathway to re:link</h1>
+        <div class="w-100"></div>
+        <h2 class="col-12 font-normal content-center" id="sub-title-text">无论你在哪里，YoMail 让你的沟通像聊天一样自如，让你的协作像面对面一样轻松。</h2>
+      </div>
+      <div id="intro-slider" class="row justify-content-center bg-0">
+        <ol class="col-auto indicator">
+          <li class="active"></li>
+          <li></li>
+          <li></li>
+        </ol>
+        <div class="w-100"></div>
+        <div class="col-auto intro-pic block">
+          <img src="~assets/p1.png" id="intro-pic" class="img-fluid fadein" alt="p1">
+        </div>
+      </div>
+    </section>
+    <section class="container-fluid download">
+      <section class="container">
+        <div class="row justify-content-center">
+          <h2 class="col-12 font-normal content-center">免费下载 YoMail 客户端，随时随地在电脑、手机或平板上轻松协作。</h2>
+        </div>
+        <div class="row justify-content-center align-items-center">
+          <div class="col-12 col-sm-6 content-center">
+            <div class="row justify-content-center">
+              <div class="col-12 col-lg-6 platform">
+                <div class="pic win"></div>
+                <div class="text">
+                  <p>PC 版</p>
+                  <a onclick="downloadYomail('exe')">立即下载</a>
+                </div>
+              </div>
+              <div class="col-12 col-lg-6 platform">
+                <div class="pic mac"></div>
+                <div class="text">
+                  <p>Mac 版</p>
+                  <a onclick="downloadYomail('dmg')">立即下载</a>
+                </div>
+              </div>
+              <div class="col-12 col-lg-6 platform">
+                <div class="pic ios"></div>
+                <div class="text">
+                  <p>iPhone/iPad 版</p>
+                </div>
+              </div>
+              <div class="col-12 col-lg-6 platform">
+                <div class="pic android"></div>
+                <div class="text">
+                  <p>Android 版</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 content-center align-center download-section">
+            <div class="desktop">
+              <img src="~assets/windows.exe.png" class="img-fluid" alt="Windows版下载">
+            </div>
+            <div class="mobile hide">
+              <p>
+                <span id="mobile-platform">iOS</span> 版下载</p>
+              <img src="http://cloudresource-1251063063.costj.myqcloud.com/image/yomail-android.png" class="img-fluid" id="mobile-qr" alt="二维码">
+              <p id="download-android-apk">或者
+                <a href="http://android-1251063063.cossh.myqcloud.com/yomail.apk">直接下载</a>
+                <span id="mobile-ext">apk</span>
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </section>
+    <section class="container medias">
+      <div class="row">
+        <div class="col-12 col-md-6 content-center">
+          <img src="~assets/yomail-support.png" class="img-fluid" alt="小Yo助理">
+        </div>
+        <div class="col-12 col-md-6 direction-column content-center align-center">
+          <h2 class="font-normal">他们如何评价 YoMail</h2>
+          <div>
+            <p>YoMail 为我们这些办公用户带来了另一个惊喜。
+              <br>
+              <span>—— 腾讯科技</span>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-4 col-sm-3 col-lg-2 media">
+          <a href="http://tech.qq.com/a/20160801/016106.htm" target="_blank">
+            <img src="http://cloudresource-1251063063.costj.myqcloud.com/image/logo2.png" alt="36Kr">
+          </a>
+        </div>
+        <div class="col-4 col-sm-3 col-lg-2 media">
+          <a href="https://sspai.com/post/35154" target="_blank">
+            <img src="http://cloudresource-1251063063.costj.myqcloud.com/image/logo1.png" alt="腾讯科技">
+          </a>
+        </div>
+        <div class="col-4 col-sm-3 col-lg-2 media">
+          <a href="http://36kr.com/p/5050029.html" target="_blank">
+            <img src="http://cloudresource-1251063063.costj.myqcloud.com/image/logo3.png" alt="创业邦">
+          </a>
+        </div>
+        <div class="col-4 col-sm-3 col-lg-2 media">
+          <a href="http://www.csdn.net/article/1970-01-01/2825626" target="_blank">
+            <img src="http://cloudresource-1251063063.costj.myqcloud.com/image/logo4.png" alt="腾讯科技">
+          </a>
+        </div>
+        <div class="col-4 col-sm-3 col-lg-2 media">
+          <a href="http://tech.feng.com/2017-03-28/A-mail-application-silicon-valley-was-in-domestic-development_674129.shtml" target="_blank">
+            <img src="http://cloudresource-1251063063.costj.myqcloud.com/image/logo5.png" alt="36Kr">
+          </a>
+        </div>
+        <div class="col-4 col-sm-3 col-lg-2 media">
+          <a href="http://www.cyzone.cn/a/20151016/281880.html" target="_blank">
+            <img src="http://cloudresource-1251063063.costj.myqcloud.com/image/logo6.png" alt="创业邦">
+          </a>
+        </div>
+      </div>
+    </section>
+    <section class="container-fluid support">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-12 col-md-5 content-center direction-column">
+            <h2 class="font-normal">支持邮箱</h2>
+            <p>Gmail、iCloud、Office、Outlook、 Yahoo、QQmail、网易、阿里邮箱、 263…
+            </p>
+          </div>
+          <div class="col-12 col-md-7 block">
+            <img src="~assets/support-email.png" class="img-fluid img-center" alt="支持的邮箱列表">
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="container features">
+      <div class="row justify-content-center">
+        <div class="col-6 col-sm-4 feature">
+          <img src="http://cloudresource-1251063063.costj.myqcloud.com/image/shop.png" alt="应用商店">
+          <p>
+            <span>应用商店</span>
+            <br>
+            <span>无限扩展</span>
+          </p>
+        </div>
+        <div class="col-6 col-sm-4 feature">
+          <img src="http://cloudresource-1251063063.costj.myqcloud.com/image/second.png" alt="实时收发">
+          <p>
+            <span>实时手法</span>
+            <br>
+            <span>流畅体验</span>
+          </p>
+        </div>
+        <div class="col-6 col-sm-4 feature">
+          <img src="http://cloudresource-1251063063.costj.myqcloud.com/image/encryption.png" alt="加密技术">
+          <p>
+            <span>加密技术</span>
+            <br>
+            <span>信息安全</span>
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-3 col-sm-2 block">
+          <h3>关于</h3>
+          <ul>
+            <li>
+              <a href="http://www.yomail.com/about">关于我们</a>
+            </li>
+            <li>
+              <a href="http://www.yomail.com/join.html">加入我们</a>
+            </li>
+            <li>
+              <a rel="nofollow" href="http://www.yomail.com/Privacy Policy.html">隐私政策</a>
+            </li>
+            <li>
+              <a rel="nofollow" href="http://www.yomail.com/en">English</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-3 col-sm-2 block">
+          <h3>帮助反馈</h3>
+          <ul>
+            <li>
+              <a target="_blank" href="http://im.nextechat.com/#/email/285e8f3c4bf0635021e6dbfdc2c5ad86">帮助反馈</a>
+            </li>
+            <li>
+              <a href="http://www.yomail.com/changelog.html">更新日志</a>
+            </li>
+            <li>
+              <a target="_blank" href="http://shang.qq.com/wpa/qunwpa?idkey=37f8f7d2d88ee223580a17b7b0d1117a29b821c67817a273667281b0f5ebb7d9">QQ客服</a>
+            </li>
+            <li>
+              <a href="mailto:support@nextechat.com">客服邮箱</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-3 col-sm-2 block">
+          <h3>立即下载(win)</h3>
+          <ul>
+            <li>
+              <a href="#" onclick="downloadYomail('exe')">本地下载</a>
+            </li>
+            <li>
+              <a href="#" onclick="downloadYomail('zip')">本地离线免安装版</a>
+            </li>
+            <li>
+              <a target="_blank" href="http://baoku.360.cn/soft/show/appid/104694736">360软件宝库</a>
+            </li>
+            <li>
+              <a target="_blank" href="http://rj.baidu.com/soft/detail/38721.html">百度软件中心</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-3 col-sm-2 block">
+          <h3>友情链接</h3>
+          <ul>
+            <li>
+              <a target="_blank" href="https://hao.360.cn/">360安全网址</a>
+            </li>
+            <li>
+              <a target="_blank" href="http://se.360.cn/">360安全浏览器</a>
+            </li>
+            <li>
+              <a target="_blank" href="https://www.jianguoyun.com/">坚果云</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-12 col-sm-4 social content-center">
+          <div class="row align-items-center justify-content-center">
+            <img src="http://cloudresource-1251063063.costj.myqcloud.com/image/wechatQR.jpg" alt="YoMail邮件客户端官方微信">
+            <p>
+              <a class="weibo" rel="nofollow" href="http://weibo.com/u/5539723734" target="_blank">
+                <svg t="1512525972279" class="icon" style="" viewBox="0 0 1026 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="1851"
+                  xmlns:xlink="http://www.w3.org/1999/xlink" width="32.0625" height="32">
+                  <defs>
+                    <style type="text/css"></style>
+                  </defs>
+                  <path d="M1012.49024 451.55328v0.15872c-6.69696 20.6592-28.86144 31.98976-49.44896 25.28768a39.35232 39.35232 0 0 1-25.28768-49.58208l-0.06656-0.03072c20.53632-63.60064 7.51616-136.15616-40.31488-189.3632-47.89248-53.21216-118.5024-73.55392-183.7312-59.65824-21.2224 4.53632-42.13248-9.04704-46.63808-30.30016-4.5056-21.25312 9.02144-42.19392 30.23872-46.73024 91.70944-19.56352 191.11424 8.98048 258.46784 83.88096 67.35872 74.83904 85.51424 176.84992 56.7808 266.33728z"
+                    fill="" p-id="1852"></path>
+                  <path d="M740.4288 304.34816v-0.03072c-18.21696 3.97312-36.17792-7.7312-40.05888-26.0096-3.94752-18.30912 7.76192-36.37248 25.97888-40.25344 44.69248-9.5488 93.14304 4.32128 125.88544 40.7808 32.86528 36.49536 41.63072 86.1696 27.60704 129.77152a33.83296 33.83296 0 0 1-42.56256 21.84704c-17.78176-5.76-27.48416-24.91392-21.72416-42.69056h-0.06144c6.8864-21.34528 2.56512-45.63456-13.46048-63.47264-16.0256-17.8176-39.75168-24.54528-61.60384-19.9424zM770.47808 496.53248c-14.45888-4.352-24.35072-7.32672-16.77312-26.35264 16.3328-41.31328 18.02752-76.96384 0.31744-102.38464-33.31072-47.73376-124.45184-45.1328-228.8384-1.28 0-0.06144-32.79872 14.36672-24.41216-11.70432 16.05632-51.77344 13.6448-95.18592-11.36128-120.192-56.65792-56.87808-207.30368 2.11968-336.47616 131.64032C56.18688 463.31904 0 566.13888 0 655.09888c0 170.08128 217.50272 273.49504 430.27968 273.49504 278.91712 0 464.52736-162.50368 464.52736-291.58912 0-77.93664-65.54624-122.19392-124.32896-140.47232z m-339.6352 371.08736c-169.77408 16.83968-316.34944-60.15488-327.36768-171.96032-11.04896-111.73888 117.71904-216.03328 287.488-232.87296 169.8048-16.83968 316.35456 60.16 327.36768 171.904 11.01824 111.86688-117.6832 216.0896-287.488 232.92928z"
+                    fill="" p-id="1853"></path>
+                  <path d="M447.80544 548.85888c-80.78336-21.08928-172.11904 19.28704-207.2064 90.6496-35.74272 72.86272-1.18784 153.68192 80.44032 180.10112 84.57728 27.35616 184.23296-14.52544 218.88-93.14816 34.18112-76.81024-8.47872-155.93984-92.11392-177.60256z m-61.68576 185.9328c-16.43008 26.2912-51.584 37.80608-78.06464 25.66144-26.10688-11.88864-33.83296-42.43968-17.40288-68.0448 16.21504-25.53856 50.20672-36.86912 76.49792-25.856 26.60352 11.392 35.08736 41.68704 18.9696 68.23936z"
+                    fill="" p-id="1854"></path>
+                </svg>
+              </a>
+              <a class="wechat">
+                <svg t="1512525994873" class="icon" style="" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2628"
+                  xmlns:xlink="http://www.w3.org/1999/xlink" width="32" height="32">
+                  <defs>
+                    <style type="text/css"></style>
+                  </defs>
+                  <path d="M387.593709 170.691754c-166.025577 0-302.247832 111.08511-302.247832 252.124063 0 81.733353 45.156549 148.264001 121.01955 200.194032l-30.405409 89.409966 105.816845-51.930031c37.780979 7.225048 68.035867 14.901661 105.816846 14.901661 9.03131 0 18.664707-0.451565 28.147582-1.204175-6.020873-19.567838-9.482875-40.941937-9.482876-62.165515 0-129.448773 113.192415-234.663531 257.091284-234.663531 9.482875 0 19.116272 0.451565 29.050713 1.65574-26.491842-119.815376-156.542702-208.322211-304.806703-208.32221z m-100.849626 208.472732c-23.631927 0-42.748199-19.116272-42.748199-42.748199s19.116272-42.748199 42.748199-42.748199 42.748199 19.116272 42.7482 42.748199-19.116272 42.748199-42.7482 42.748199z m210.128473 0c-23.631927 0-42.748199-19.116272-42.748199-42.748199s19.116272-42.748199 42.748199-42.748199 42.748199 19.116272 42.7482 42.748199-19.266794 42.748199-42.7482 42.748199z"
+                    fill="" p-id="2629"></path>
+                  <path d="M682.014405 393.012494c-143.447303 0-256.639718 96.635014-256.639717 215.547259 0 118.761723 113.192415 215.095693 256.639717 215.095693 30.405409 0 60.660297-7.676613 90.614141-14.901661l83.238571 44.704983-23.029839-74.056739c60.660297-44.704983 105.816846-103.860062 105.816845-170.842276 0-118.912245-121.01955-215.547259-256.639718-215.547259z m-79.174481 182.582979c-18.815229 0-34.168455-15.353227-34.168456-34.168456S584.024695 507.258562 602.839924 507.258562s34.168455 15.353227 34.168455 34.168455-15.353227 34.168455-34.168455 34.168456z m166.025577 0c-18.815229 0-34.168455-15.353227-34.168456-34.168456s15.353227-34.168455 34.168456-34.168455 34.168455 15.353227 34.168455 34.168455-15.202705 34.168455-34.168455 34.168456z"
+                    fill="" p-id="2630"></path>
+                </svg>
+              </a>
+              <a class="facebook" rel="nofollow" href="https://www.facebook.com/Yomailapp" target="_blank">
+                <svg t="1512526024699" class="icon" style="" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="3381"
+                  xmlns:xlink="http://www.w3.org/1999/xlink" width="32" height="32">
+                  <defs>
+                    <style type="text/css"></style>
+                  </defs>
+                  <path d="M767.428571 6.857143l0 150.857143-89.714286 0q-49.142857 0-66.285714 20.571429t-17.142857 61.714286l0 108 167.428571 0-22.285714 169.142857-145.142857 0 0 433.714286-174.857143 0 0-433.714286-145.714286 0 0-169.142857 145.714286 0 0-124.571429q0-106.285714 59.428571-164.857143t158.285714-58.571429q84 0 130.285714 6.857143z"
+                    p-id="3382"></path>
+                </svg>
+              </a>
+              <a class="twitter" rel="nofollow" href="https://twitter.com/Yomail_App" target="_blank">
+                <svg t="1512526041623" class="icon" style="" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="4142"
+                  xmlns:xlink="http://www.w3.org/1999/xlink" width="32" height="32">
+                  <defs>
+                    <style type="text/css"></style>
+                  </defs>
+                  <path d="M1013.978 191.231c-36.969 16.396-76.762 27.491-118.462 32.473 42.621-25.531 75.327-65.925 90.685-114.084-39.878 23.632-83.967 40.779-131.027 50-37.546-40.083-91.203-65.123-150.562-65.123-113.852 0-206.213 92.383-206.213 206.265 0 16.195 1.76 31.899 5.305 46.971-171.427-8.617-323.377-90.655-425.184-215.542-17.75 30.57-27.925 65.986-27.925 103.796 0 71.492 36.426 134.657 91.782 171.683-33.804-1.034-65.642-10.399-93.479-25.76v2.539c0 99.991 71.090 183.354 165.52 202.259-17.321 4.846-35.529 7.265-54.375 7.265-13.284 0-26.251-1.241-38.787-3.659 26.22 81.92 102.386 141.602 192.662 143.185-70.593 55.358-159.555 88.322-256.175 88.322-16.655 0-33.108-0.921-49.218-2.851 91.292 58.468 199.727 92.642 316.199 92.642 379.483 0 586.906-314.27 586.906-586.896 0-8.964-0.178-17.892-0.547-26.686 40.308-29.102 75.325-65.444 102.896-106.79z"
+                    p-id="4143"></path>
+                </svg>
+              </a>
+              <a class="mail" rel="nofollow" href="mailto:support@nextechat.com?Subject=" target="_blank">
+                <svg t="1512526310045" class="icon" style="" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="10661"
+                  xmlns:xlink="http://www.w3.org/1999/xlink" width="32" height="32">
+                  <defs>
+                    <style type="text/css"></style>
+                  </defs>
+                  <path d="M925.696 808.448H98.304c-15.872 0-29.184-12.288-29.184-27.136V250.88l421.376 377.344c6.144 5.12 13.312 7.68 20.992 7.68 4.608 0 9.216-1.536 13.824-3.584 4.608-1.024 9.216-3.072 12.8-6.656l417.28-378.88v533.504c-0.512 15.872-13.312 28.16-29.696 28.16z m-412.672-238.592L116.736 215.552h786.944l-390.656 354.304z m412.672-409.088H98.304c-48.128 0-87.552 36.864-87.552 81.92v538.112c0 45.056 39.424 81.92 87.552 81.92h827.904c48.128 0 87.552-36.864 87.552-81.92V242.688c-0.512-45.056-39.424-81.92-88.064-81.92z"
+                    p-id="10662"></path>
+                </svg>
+              </a>
+            </p>
+          </div>
+        </div>
+      </div>
+      <hr>
+      <div>
+        Copyright ©YoMail
+        <span id="year"></span> 沪ICP备 15009188号-1
+      </div>
+    </div>
+  </footer>
+</body>
+<script src="http://www.yomail.com/assets/version.js"></script>
+
+</html>

@@ -1,0 +1,98 @@
+@import './common.css';
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+main {
+  color: #4a4a4a;
+  padding: 4rem 0;
+
+  & nav {
+    padding-right: 0 !important;
+
+    & > ul {
+      width: 100%;
+      border-right: 1px solid #e8e8e8;
+
+      & > li {
+        display: flex;
+        width: 100%;
+        height: 3.4rem;
+        font-size: 1.125rem;
+        padding-left: 1rem;
+        cursor: pointer;
+
+        &.active,
+        &:hover {
+          background-color: #f1f9ff;
+        }
+      }
+    }
+  }
+
+  & section {
+    padding-left: 5rem !important;
+
+    & h1 {
+      font-size: 1.25rem;
+      margin-bottom: 1rem;
+    }
+
+    & .content {
+      padding-left: 2rem;
+      border-left: 1px solid #e8e8e8;
+
+      & .a-log {
+        display: flex;
+
+        & > h2 {
+          position: relative;
+
+          &::before {
+            position: absolute;
+            top: 15px;
+            left: -2.282rem;
+            content: '';
+            display: inline-block;
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background: #fff;
+            border: 1px solid #0086e5;
+          }
+        }
+
+        & > .tag {
+          display: inline-block;
+          width: 80px;
+          font-size: 0.875rem;
+          text-align: center;
+          margin: 0.2rem 0 1.2rem;
+          border-radius: 4px;
+          background-color: #f0f0f0;
+        }
+
+        & > ul {
+          list-style: circle;
+          list-style-position: inside;
+
+          & > li {
+            margin: 0.3rem 0 0 0.2rem;
+          }
+        }
+      }
+
+      @media (width < 576px) {
+        padding-left: 1rem;
+
+        & h2::before {
+          left: -1.282rem !important;
+        }
+      }
+    }
+
+    @media (width < 768px) {
+      padding-left: 1rem !important;
+    }
+  }
+}

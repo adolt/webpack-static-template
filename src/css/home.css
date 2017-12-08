@@ -1,0 +1,322 @@
+@import './common.css';
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+main > .intro {
+  padding: 3rem 0 0;
+
+  & > div {
+    width: 100%;
+  }
+
+  & h1 {
+    font-size: 2.5rem;
+  }
+
+  & h2 {
+    font-size: 1.44rem;
+    text-align: center;
+  }
+
+  & .indicator {
+    padding: 2rem 0 0;
+
+    & > li {
+      display: inline-block;
+      width: 8px;
+      height: 8px;
+      margin: 0 3px;
+      border-radius: 5px;
+      border: 1px solid #0086e5;
+      background-color: #fff;
+      transition: all 0.1s linear;
+
+      &:hover,
+      &.active {
+        background-color: #0086e5;
+      }
+    }
+  }
+
+  & .intro-pic {
+    max-width: 100%;
+
+    & > img {
+      max-width: 100%;
+      transform: translateY(30px);
+      transition: transform 0.8s ease, opacity 0.8s ease;
+
+      &.fadein {
+        transform: translateY(0);
+      }
+
+      &.opacity-0 {
+        opacity: 0;
+      }
+    }
+  }
+
+  & > div:nth-of-type(1) {
+    background: linear-gradient(to bottom, #fff 0%, #fff 80%, #fbfdfe 100%);
+  }
+
+  & > div:nth-of-type(2) {
+    transition: background 0.8s ease;
+
+    &.bg-0 {
+      background: url('~assets/p1-bg.png') no-repeat bottom;
+    }
+
+    &.bg-1 {
+      background: url('~assets/p2-bg.png') no-repeat bottom;
+    }
+
+    &.bg-2 {
+      background: url('~assets/p3-bg.png') no-repeat bottom;
+    }
+  }
+}
+
+main > .download {
+  padding: 8rem 0;
+  background: #0086e5;
+
+  & > section > div:first-child {
+    padding-bottom: 3rem;
+  }
+
+  & h2 {
+    font-size: 1.44rem;
+    color: #fff;
+    text-align: center;
+  }
+
+  & .platform {
+    display: flex;
+    align-items: center;
+    flex: 0 0 47%;
+    height: 77px;
+    margin-bottom: 14px;
+    border-radius: 5px;
+    background: #005592;
+    transition: background 0.4s ease;
+
+    & > .pic {
+      width: 45px;
+      height: 45px;
+      margin-right: 10px;
+      transition: background 0.5s ease;
+
+      &.win {
+        background: url('~assets/windows.n.png');
+      }
+
+      &.mac {
+        background: url('~assets/mac.n.png');
+      }
+
+      &.ios {
+        background: url('~assets/iphone.n.png');
+      }
+
+      &.android {
+        background: url('~assets/android.n.png');
+      }
+    }
+
+    & > .text {
+      transition: transform 0.5s ease;
+
+      & > p {
+        color: #fff;
+        font-size: 1.125rem;
+        margin-bottom: 0;
+        cursor: default;
+        transition: color 0.5s ease;
+      }
+
+      & > a {
+        font-size: 0.875rem;
+        transform: translateY(20px);
+        cursor: pointer;
+        transition: opacity 0.5s ease;
+      }
+    }
+
+    &:hover {
+      background: #fff;
+
+      & > .pic {
+        &.win {
+          background: url('~assets/windows.s.png');
+        }
+
+        &.mac {
+          background: url('~assets/mac.s.png');
+        }
+
+        &.ios {
+          background: url('~assets/iphone.s.png');
+        }
+
+        &.android {
+          background: url('~assets/android.s.png');
+        }
+      }
+
+      & > .text > p {
+        color: #4a4a4a;
+      }
+    }
+
+    &:nth-of-type(odd) {
+      margin-right: 10px;
+    }
+
+    &:nth-of-type(1),
+    &:nth-of-type(2) {
+      & .text {
+        transform: translateY(10px);
+      }
+
+      & a {
+        opacity: 0;
+      }
+
+      &:hover {
+        & .text {
+          transform: translateY(0);
+        }
+
+        & a {
+          opacity: 1;
+        }
+      }
+    }
+
+    @media (width < 768px) {
+      &.col-12 {
+        flex: 0 0 100%;
+        margin-right: 0;
+      }
+    }
+
+    @media (width < 576px) {
+      &:nth-of-type(1),
+      &:nth-of-type(2) {
+        display: none;
+      }
+    }
+  }
+
+  & .desktop,
+  & .mobile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  & .download-section {
+    height: 242px;
+  }
+
+  & .desktop {
+    @media (width < 576px) {
+      display: none;
+    }
+  }
+
+  & .mobile {
+    flex-flow: column nowrap;
+
+    & > p {
+      font-size: 1.25rem;
+      color: #fff;
+
+      & > a {
+        color: #fff;
+        text-decoration: underline;
+        margin: 0 3px 0 10px;
+      }
+    }
+
+    & > img {
+      max-width: 150px;
+    }
+  }
+}
+
+main > .medias {
+  padding: 3rem 0 5rem;
+
+  & h2 {
+    font-size: 1.875rem;
+  }
+
+  & p {
+    font-size: 1.25rem;
+    color: #7a7a7a;
+
+    & > span {
+      display: block;
+    }
+  }
+
+  & > div {
+    max-width: 100%;
+
+    &:first-child {
+      padding-bottom: 3rem;
+    }
+  }
+
+  & .media {
+    display: inline-flex;
+    justify-content: center;
+    margin-bottom: 1rem;
+
+    & img {
+      max-width: 120px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      box-shadow: 1px 1px 3px #e7e7e7, -1px -1px 3px #e7e7e7;
+      transition: transform 0.218s ease, box-shadow 0.218s ease;
+
+      &:hover {
+        transform: translate3d(0, -5px, 0);
+        box-shadow: 0 7px 21px rgba(56, 56, 56, 0.15);
+      }
+    }
+  }
+}
+
+main > .support {
+  color: #fff;
+  background: #0086e5;
+
+  & > div {
+    height: 550px;
+    display: flex;
+    align-items: center;
+  }
+}
+
+main > .features {
+  & > div {
+    display: flex;
+    align-items: center;
+    min-height: 250px;
+  }
+
+  & .feature {
+    display: flex;
+    align-items: center;
+
+    & > p {
+      font-size: 1rem;
+      padding-left: 0.875rem;
+    }
+  }
+}

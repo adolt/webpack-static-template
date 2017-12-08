@@ -1,0 +1,224 @@
+/* ==========================================================================
+   Bootstrap's class
+   ========================================================================== */
+.clearfix::before,
+.clearfix::after {
+  content: ' ';
+  display: table;
+}
+
+.clearfix::after {
+  clear: both;
+}
+
+.w-100 {
+  width: 100%;
+}
+
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+}
+
+/* ==========================================================================
+   Author's helper class
+   ========================================================================== */
+
+[class^="col-"] {
+  display: flex;
+}
+
+.block {
+  display: block;
+}
+
+.direction-column {
+  flex-direction: column;
+}
+
+.content-center {
+  justify-content: center;
+}
+
+.align-center {
+  align-items: center;
+}
+
+ol,
+ul {
+  display: inline-block;
+  list-style: none;
+  -webkit-margin-before: 0;
+  -webkit-padding-start: 0;
+  -webkit-padding-before: 0;
+  -webkit-margin-start: 0;
+  -moz-margin-start: 0;
+  -moz-padding-start: 0;
+}
+
+.font-normal {
+  font-weight: normal;
+}
+
+.hide {
+  display: none !important;
+}
+
+/* ==========================================================================
+   Browser Upgrade Prompt
+   ========================================================================== */
+
+.browserupgrade {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Common class
+   ========================================================================== */
+html {
+  font-size: 16px;
+}
+
+header {
+  margin: 1.8rem 0 0;
+
+  & .logo {
+    & > img {
+      width: 52px;
+      height: 52px;
+    }
+
+    & > span {
+      position: relative;
+      top: -3px;
+      left: 5px;
+      font-size: 1.5rem;
+      color: #0086e5;
+    }
+
+    @media (width < 576px) {
+      &,
+      & + div {
+        margin: 0 auto;
+      }
+    }
+  }
+
+  & .navbar {
+    & > ul {
+      display: inline-block;
+      cursor: default;
+
+      & > li {
+        display: inline-block;
+        list-style: none;
+        padding: 0.25rem 0.9rem;
+        border-radius: 4px;
+        transition: background 0.2s linear, color 0.2s linear;
+        cursor: pointer;
+
+        & > a {
+          color: #4a4a4a;
+          text-decoration: none;
+        }
+
+        &.active,
+        &:hover {
+          background: #0086e5;
+
+          & > a {
+            color: #fff;
+          }
+        }
+      }
+    }
+  }
+}
+
+footer {
+  padding: 1.5rem 0 0;
+  background-color: #2b2d2f;
+
+  & h3 {
+    color: #5f6875;
+    font-size: 0.875rem;
+  }
+
+  & a {
+    color: #5f6875;
+    font-size: 0.75rem;
+    transition: color 0.2s linear;
+    text-decoration: none;
+
+    &:hover {
+      color: #fff;
+      text-decoration: none;
+    }
+  }
+
+  & hr {
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #5f6875;
+  }
+
+  & > div {
+    & > div:last-child {
+      color: #5f6875;
+      font-size: 0.75rem;
+      text-align: center;
+    }
+  }
+
+  & .social {
+    & img {
+      width: 100px;
+      height: 100px;
+      margin-right: 0.5rem;
+    }
+
+    & p {
+      vertical-align: center;
+    }
+
+    & a {
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 50%;
+      background-color: #555758;
+      width: 2rem;
+      height: 2rem;
+
+      & > svg {
+        fill: #fff;
+        width: 1.5rem;
+        height: 1.5rem;
+      }
+    }
+
+    & .twitter:hover {
+      background-color: #2b7bb9;
+    }
+
+    & .facebook:hover {
+      background-color: #3b5998;
+    }
+
+    & .weibo:hover {
+      background-color: #e6162d;
+    }
+
+    & .wechat:hover {
+      cursor: pointer;
+      background-color: #609700;
+    }
+
+    & .mail:hover {
+      background-color: #f89a1e;
+    }
+  }
+}
